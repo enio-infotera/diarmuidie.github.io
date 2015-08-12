@@ -5,6 +5,8 @@ tags:
     - Guide
 excerpt: "This guide will show you how to install an ImageRack server on an free Heroku dynamo to resizing and serve images from an S3 bucket."
 ---
+![Resized image from a live ImageRack Server on Heroku](http://imagerack.herokuapp.com/large/photo1.jpg)
+
 This guide will show you how to install an [ImageRack](https://github.com/diarmuidie/ImageRack) server on an [Heroku](https://www.heroku.com/) free dynamo to resize and serve images from an [Amazon S3](https://aws.amazon.com/s3/) bucket. ImageRack is an easy to setup on the fly image manipulation server written that I wrote to simplify handling user media uploads.
 
 The companion code for this guide is available on BitBucket: [bitbucket.org/diarmuidie/imagerack-heroku](https://bitbucket.org/diarmuidie/imagerack-heroku/).
