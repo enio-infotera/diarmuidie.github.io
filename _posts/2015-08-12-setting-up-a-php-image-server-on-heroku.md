@@ -39,13 +39,17 @@ Copy the `bootstrap/dependencies.s3.sample.php` file and save it as `bootstrap/d
 
 You will have to edit the cache dependency line to change it from:
 
-```php
+```PHP
+<?php
+
 $dependencies['cache'] = new Filesystem(new AwsS3Adapter($s3Client, 'test-image-rack-cache'));
 ```
 
 To:
 
-```php
+```PHP
+<?php
+
 $dependencies['cache'] = new Filesystem(
     new League\Flysystem\Adapter\Local(__DIR__.'/../storage/cache')
 );
@@ -63,7 +67,9 @@ First we need to update the S3 connection settings (in `bootstrap/dependencies.p
 
 Edit the S3Client Factory credentials to use `getenv()` like below:
 
-```php
+```PHP
+<?php
+
 $s3Client = S3Client::factory([
     'credentials' => [
         'key'    => getenv('S3_KEY'),
@@ -83,11 +89,11 @@ web: vendor/bin/heroku-php-apache2 public/
 
 Finally we can edit the `composer.json` `require` section to make sure Heroku installs the correct versions of PHP and GD:
 
-```JSON
+```javascript
 "require": {
     "php": ">=5.4",
-    "ext-gd" : "*",
-    ...
+    "ext-gd" : "*"
+    // ...
 }
 ```
 After editing the `composer.json` file you need to run an update to keep the lock file in sync:
