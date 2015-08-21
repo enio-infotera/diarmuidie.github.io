@@ -6,6 +6,8 @@ layout: default
   {% for post in paginator.posts %}
     <article class="post">
 
+      <time datetime="{{ post.date | date_to_xmlschema}}" title="{{ post.date | date_to_rfc822 }}">{{ post.date | date: "%B %e, %Y" }}</time>
+
       <h2 class="stamp"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       <div class="entry">
