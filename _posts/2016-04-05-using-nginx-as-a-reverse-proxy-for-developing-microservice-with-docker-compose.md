@@ -82,7 +82,7 @@ server {
     error_log  /var/log/nginx/error.log error;
 }
 ```
-This block tells nginx to pass all requests for `microservice1.test` to the microservices app container (`http://microservice1_app_1`). You will get this domain when you start the microservice container by running `docker ps` and looking under the "NAMES" column.
+This block tells nginx to pass all requests for `microservice1.test` to the microservices app container (`http://microservice1_app_1`). You can get this domain when you start the microservice container by running `docker ps` and looking under the "NAMES" column.
 
 Note that the `proxy_intercept_errors` option is set to `on` so that nginx will return all error responses from the microservice, instead of returning the default Nginx response. This is useful if you return debug info as part of the response.
 
