@@ -29,12 +29,13 @@ github_repo_url: https://github.com/diarmuidie/diarmuidie.github.io
 # Site config options
 google_analytics: 'UA-45221135-1'
 disqus: 'diarmuidie'
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
 
 # Post config
-markdown: redcarpet
-highlighter: pygments
 permalink: "/blog/:title/"
-highlighter: pygments
 
 # Pagination
 paginate: 6
@@ -52,6 +53,7 @@ gems:
     - jemoji
     - jekyll-redirect-from
     - jekyll-sitemap
+    - jekyll-paginate
 
 # Exclude these files from your production _site
 exclude:
