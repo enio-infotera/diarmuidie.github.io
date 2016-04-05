@@ -14,7 +14,7 @@ I've recently started using Docker for my development environment. One of the fi
 
 I will outline one of the solutions that involves using Nginx as a reverse proxy to send requests to the correct backend microservice.
 
-![Docker Compose Reverse Proxy Layout](/media/docker-reverse-proxy/nginx-docker-reverse-proxy.png)
+![Docker Compose Reverse Proxy Layout](/media/nginx-docker-reverse-proxy.png)
 
 The code for this example is available on [Github](https://github.com/diarmuidie/docker-compose-reverse-proxy-example/)
 
