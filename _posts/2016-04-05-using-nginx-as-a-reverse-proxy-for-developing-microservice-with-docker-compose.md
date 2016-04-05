@@ -46,7 +46,6 @@ services:
       - microservice2
     ports:
       - 80:80
-      - 443:443
 
 networks:
   microservice1:
@@ -56,7 +55,7 @@ networks:
     external:
       name: microservice2_default
 ```
-This file tells docker-compose to create a `proxy` service that connects to the external microservice project networks. It needs to be able to connect to thee networks so that it can proxy the requests it receives to them. We also bind the proxy service to the hosts port 80 and 443 so that we can connect to it.
+This file tells docker-compose to create a `proxy` service that connects to the external microservice project networks. It needs to be able to connect to these networks so that it can proxy the requests it receives to the microservices docker container. We also bind the proxy service to the hosts port 80 so that we can connect to it.
 
 ### Nginx
 
