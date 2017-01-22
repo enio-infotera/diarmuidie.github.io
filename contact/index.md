@@ -11,5 +11,3 @@ permalink: /contact/
 *   [Facebook](https://www.facebook.com/diarmuidie)
 *   [Github](https://github.com/diarmuidie)
 *   [Twitter](https://twitter.com/diarmuidie)
-
-[PGP public Key](https://diarmuid.ie/8AA7DB0B.asc) ([what is this?](http://www.qdog.com/pgp/pgp_faq.html))
