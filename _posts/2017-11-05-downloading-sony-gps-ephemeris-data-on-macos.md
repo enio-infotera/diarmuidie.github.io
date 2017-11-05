@@ -3,6 +3,7 @@ layout: post
 title: 'Downloading Sony GPS Ephemeris Data on macOs'
 tags:
     - Article
+excerpt: "CLI tool to download GPS ephemeris data to Sony Cyber-shot cameras on MacOS"
 ---
 
 ## What is GPS Ephemeris Data
