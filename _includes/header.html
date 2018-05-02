@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
 <head>
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.tagline }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.tagline }}</title>
 
     {% include meta.html %}
 
@@ -14,7 +14,7 @@
 
     <script src="/assets/js/modernizr-3.0.0.min.js"></script>
 
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
 </head>
 
@@ -25,7 +25,7 @@
             <header class="masthead">
 
                 <div class="site-info">
-                    <a href="/" class="clip-text site-title">{{ site.name }}</a>
+                    <a href="/" class="clip-text site-title">{{ site.title }}</a>
                     <p class="site-description">{{ site.tagline }}</p>
                 </div>
 

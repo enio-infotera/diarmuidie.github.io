@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Diarmuid.ie
+title: Diarmuid.ie
 
 # Short bio or description (displayed in the header)
 tagline: The online home of diarmuid
@@ -27,7 +27,6 @@ github_repo_url: https://github.com/diarmuidie/diarmuidie.github.io
 # baseurl: ""
 
 # Site config options
-google_analytics: 'UA-45221135-1'
 disqus: 'diarmuidie'
 markdown: kramdown
 highlighter: rouge
@@ -48,7 +47,7 @@ sass:
     sourcemap: :true
 
 # Use the following plug-ins
-gems:
+plugins:
     - jekyll-mentions
     - jemoji
     - jekyll-redirect-from
